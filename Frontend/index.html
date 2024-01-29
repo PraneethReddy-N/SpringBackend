@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#/login">Login</a>
+        <a href="#/register">Register</a>
+    </nav>
+<!-- 
+    <form id="greetingForm">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        
+    </form> 
+    <button  id="submit">Submit</button>
+    <div id="messageContainer"></div> -->
+    <div id="loginForm" class="page" style="display:none;">
+        <input type="text" id="loginUsername" placeholder="Username">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button type="submit">Login</button><br><br>
+        <button type="submit">New User? Click here</button>
+    </div>
+    <br>
+    <br>
+    <div id="registerForm" class="page" style="display: none;">
+        <input type="number" id="registerId" placeholder="Id"> <br><br>
+        <input type="text" id="studentName" placeholder="name"> <br> <br>
+        <input type="email" id="registerEmail" placeholder="email"> <br> <br>
+        <input type="password" id="registerPassword" placeholder="Password"> <br> <br>
+        <input type="password" id="confirmPassword" placeholder="confirmPassword"> <br> <br>
+        <button id="submitRegistration" type="submit">Register</button>
+    </div>
+    
+    
+    <script src="index.js" defer></script>
+</body>
+</html>
