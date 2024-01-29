@@ -1,16 +1,13 @@
 package com.example.demo.student;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
+
 import jakarta.persistence.Id;
 
 @Entity
-//represent, hold or transfer data
+//represent, hold or transfer
 public class Student {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private Long StudentId;
+    private Long studentId;
     private String name;
     private String email;
     private String password;
@@ -27,20 +24,14 @@ public class Student {
     }
 
     public Long getStudentId() {
-        return StudentId;
+        return studentId;
     }
 
     public void setStudentId(Long studentId) {
-        StudentId = studentId;
+        this.studentId = studentId;
     }
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getName() {
         return name;
@@ -58,10 +49,10 @@ public class Student {
         this.email = email;
     }
 
-    public Student(Long StudentId,
+    public Student(Long studentId,
                 String name,
                   String email,String password) {
-        this.StudentId = StudentId;
+        this.studentId = studentId;
         this.name = name;
         this.email = email;
         this.password = password;
@@ -69,7 +60,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student [id=" + StudentId + ", name=" + name + ", email=" + email + "]";
+        return "Student [id=" + studentId + ", name=" + name + ", email=" + email + "]";
     }
     
 }
