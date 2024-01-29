@@ -2,10 +2,17 @@ package com.example.demo.student;
 
 import org.springframework.stereotype.Service;
 
+
+
 @Service
 //businesslayer
-public class StudentService {
+public interface StudentService {
+
+    public Student saveStudent(Student student);
+
+    
+} 
     
     
 
-}
+
